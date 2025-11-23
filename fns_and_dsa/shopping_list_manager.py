@@ -13,17 +13,17 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            item = input("What item do you want to add?: ")
-            print(f"Added '{item}' to shopping list")
-            shopping_list.append(item)
+            choice = input("What item do you want to add?: ")
+            print(f"Added '{choice}' to shopping list")
+            shopping_list.append(choice)
         elif choice == '2':
             # Prompt for and remove an item
-            item = input("What item would you like to remove?: ")
-            if item in shopping_list:
-                shopping_list.remove(item)
-                print(f"Removed '{item}' from the shopping list.")
+            choice = input("What item would you like to remove?: ")
+            if choice in shopping_list:
+                shopping_list.remove(choice)
+                print(f"Removed '{choice}' from the shopping list.")
             else:
-                print(f"'{item}' not found in the shopping list.")
+                print(f"'{choice}' not found in the shopping list.")
         elif choice == '3':
             # Display the shopping list
             for i in shopping_list:
