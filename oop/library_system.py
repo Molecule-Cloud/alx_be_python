@@ -27,9 +27,7 @@ class PrintBook(Book):
 
 class Library:
     def __init__(self, books=None):
-        if books is None:
-            books = []
-        self.books = books
+        self.books = [] if books is None else books
 
     def add_book(self, book):
         self.books.append(book)
